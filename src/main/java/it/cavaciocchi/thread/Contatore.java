@@ -1,16 +1,16 @@
 package it.cavaciocchi.thread;
 
 public class Contatore {
-    public int valore= 0;
-    public int valMax = 10;
+    public int valore;
+    public int valMax;
 
-    public Contatore(int valore, int valMax){
-        this.valore= valore;
-        this.valMax= valMax;
+    public Contatore(){
+        this.valore= 0;
+        this.valMax= 10;
     }
 
     public boolean incrementa(String nomeThread){
-        if (valore>valMax) {
+        if (valore>=valMax) {
             return false;
         }
         valore++;
